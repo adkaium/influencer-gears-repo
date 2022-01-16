@@ -65,6 +65,9 @@ header{
     font-size: 16px;
     font-family:'Poppins', sans-serif;
 }
+.nav-manu a:hover{
+    color:gray;
+}
 
 /* ends heradr section  */
 
@@ -172,11 +175,21 @@ main{
   .card {
     width: 300px;
     height: 385px; 
+    margin-top: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow:1px 1px 2px rgba(128, 128, 128, 0.123);
+  }
+  .card:hover {
+      box-shadow:2px 2px 3px rgba(128, 128, 128, 0.479);
+  }
+  .card:hover .card-rate{
+      color:red;
+      font-weight: bold;
+      cursor: pointer;
   }
   .card-detail{
       margin-top:5px;
@@ -299,4 +312,36 @@ article{
 
 #sec2{grid-area: s2;}
 
+/* responsib section  */
 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+    header{
+        grid-area: h;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        'nav1 nav2';
+        margin-top: 30px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        /* justify-content: center;
+        align-items: center; */
+        /* margin-top: 30px;
+        background-color: #aaaaaa13;
+      }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {} */ 
