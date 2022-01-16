@@ -101,7 +101,10 @@ main{
 .main-button{
     background-color: #E02C6D;
     width: 196px;
-height: 44px;
+   height: 44px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 article{
     display: grid;
@@ -113,9 +116,9 @@ article{
     ;
     height: 100%;
 }
-section{
+/* section{
     
-}
+} */
 aside{
     background-color: blue;
 }
